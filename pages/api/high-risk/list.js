@@ -1,6 +1,7 @@
 // pages/api/high-risk/list.js
 // Aggregates high-risk cases from all health records
-import { fetchFromBackend, createBackendHeaders, handleAuthError } from '../../utils/backendHelper';
+import { fetchFromBackend, createBackendHeaders, handleAuthError } from "../../../utils/backendHelper";
+import backendHelper from "../../../utils/backendHelper";
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
